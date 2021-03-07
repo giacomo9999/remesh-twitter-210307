@@ -22,7 +22,7 @@ function App() {
 
   const dataDisplay = dataIn
     ? tweetData.map((entry, index) => (
-        <li key={"tweet_" + index}>{entry.id}</li>
+        <li key={"tweet_" + index}>{entry.full_text.length}</li>
       ))
     : null;
 
