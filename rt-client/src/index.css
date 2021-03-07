@@ -42,7 +42,7 @@ Cool Grey 11: #C5D3E2
 body {
   /* background color 0 */
   margin: 0;
-  background-color: #1c2a39;
+  background-color: #3C4A59;
   font-family: "Oswald", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -72,22 +72,22 @@ p {
 }
 
 .graph-container {
-  width: 85%;
+  width: 95%;
   height: 500px;
   margin: 0 auto;
 }
 
 .container-outer {
-  width: 30%;
+  width: 95%;
   padding: 10px;
   margin: 20px auto 10px;
   /* background color 5 */
-  background-color: #6c7a89;
+  background-color: black;
   border-radius: 5px;
 }
 
 .container-inner {
-  width: 85%;
+  width: 25%;
   margin: 10px auto 5px;
   /* background color 2 */
   background-color: #3c4a59;
