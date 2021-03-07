@@ -1,5 +1,6 @@
 import { useState } from "react";
 import axios from "axios";
+import DataGraph from "./DataGraph";
 
 function App() {
   const [tweetData, setTweetData] = useState({});
@@ -27,11 +28,16 @@ function App() {
     : null;
 
   return (
-    <div className="container-outer">
-      <h1>Visualizing Twitter</h1>
-      <button onClick={() => fetchData("erikloomis")}>Fetch The Data</button>
-      <ul>{dataDisplay}</ul>
+    <div className="graph-container">
+      <DataGraph />
     </div>
+
+    // <div className="container-outer">
+    // <div>
+    //   <h1>Visualizing Twitter</h1>
+    //   <button onClick={() => fetchData("erikloomis")}>Fetch The Data</button>
+    //   <ul>{dataDisplay}</ul>
+    // </div>
   );
 }
 

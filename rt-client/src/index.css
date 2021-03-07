@@ -24,11 +24,10 @@ Cool Grey 11: #C5D3E2
       rel="stylesheet"
     /> */
 
-    /* <script
+/* <script
     src="https://kit.fontawesome.com/fc5fc84c88.js"
     crossorigin="anonymous"
   ></script> */
-
 
 /* <i className="fa fa-edit"></i> */
 /* <i className="fa fa-trash-o"></i> */
@@ -70,6 +69,12 @@ p {
 .dark {
   /* color 0 */
   color: black;
+}
+
+.graph-container {
+  width: 85%;
+  height: 500px;
+  margin: 0 auto;
 }
 
 .container-outer {

@@ -27,7 +27,7 @@ app.get("/:id", (req, res) =>
       "statuses/user_timeline",
       {
         screen_name: req.params.id,
-        count: 10,
+        count: 2,
         tweet_mode: "extended",
       },
       (err, data, response) => {
