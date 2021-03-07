@@ -6,8 +6,8 @@ function App() {
   const [tweetData, setTweetData] = useState({});
   const [dataIn, setDataIn] = useState(false);
 
-  const fetchData = (user) => {
-    let userUrl = "http://localhost:8082/" + user;
+  const fetchData = (user, numOfTweets) => {
+    let userUrl = "http://localhost:8082/" + user + "/" + numOfTweets;
     console.log(userUrl);
     axios
       .get(userUrl)
@@ -30,11 +30,12 @@ function App() {
   return (
     <div className="container-outer">
       <h1>Visualizing Twitter</h1>
-      <button onClick={() => fetchData("erikloomis")}>Fetch The Data</button>
       <div className="graph-container">
         <DataGraph />
       </div>
-
+      <button onClick={() => fetchData("erikloomis", 4)}>
+        Fetch The Data
+      </button>
       <ul>{dataDisplay}</ul>
     </div>
   );

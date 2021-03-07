@@ -21,13 +21,13 @@ app.use(cors({ origin: true, credentials: true }));
 app.use(express.json({ extended: false }));
 
 // Get Tweet data by username
-app.get("/:id", (req, res) =>
+app.get("/:user/:num", (req, res) =>
   (async () => {
     T.get(
       "statuses/user_timeline",
       {
-        screen_name: req.params.id,
-        count: 2,
+        screen_name: req.params.user,
+        count: req.params.num,
         tweet_mode: "extended",
       },
       (err, data, response) => {
