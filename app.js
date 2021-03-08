@@ -31,7 +31,7 @@ app.get("/:user/:num", (req, res) =>
         tweet_mode: "extended",
       },
       (err, data, response) => {
-        console.log("Data In: " + req.params.id);
+        // console.log("Data In: " + req.params.user);
         res.send(data);
       }
     );
