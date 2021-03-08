@@ -15,10 +15,10 @@ touch .env
 to create a file to hold the environmental variables. If you haven't already, go to the Developer section of Twitter.com, set up an account, and obtain an API Key, an API Secret Key, an Access Token, and an Access Token Secret. The .env file should look like the example below. (PORT is the port number the server will listen for requests on. If you change it for some reason, the variable userUrl in rt-client/src will also need to be changed to match it.)
 
 PORT=8082  
-API_KEY=<Your API Key>  
-API_SECRET_KEY=<Your API Secret Key>  
-ACCESS_TOKEN=<Your Access Token>  
-ACCESS_TOKEN_SECRET=<Your Access Token Secret>  
+API_KEY=Your API Key  
+API_SECRET_KEY=Your API Secret Key  
+ACCESS_TOKEN=Your Access Token  
+ACCESS_TOKEN_SECRET=Your Access Token Secret  
 
 4. Navigate into the rt-client directory and type   
 npm i    
@@ -33,10 +33,10 @@ This will run the "dev" script, which launches the server and then the client. B
 --
 
 Notes to the reviewer:    
-• To the best of my knowledge, I fulfilled 100% of the application and technical requirements--if I didn't, it's because I misunderstood something.      
-• The term "audience engagement" is of course open to interpretation. In the end I just decided to include two lines for "number of times favorited" and "number of times retweeted," which seemed a reasonable metric for measuring engagement.
-• The brief mentioned "number of hashtags," and I included a line for that statistic--even though it's almost always zero. I'm actually wondering if I misunderstood the question.  
-• The wildly variable popularity of people on Twitter made it *really* hard to scale the graph correctly. I experimented with displaying the data logarithmically, so that Twitterers with followers in the millions could be analyzed visually easy easily as those with followers in the dozens--but it just didn't produce a result that seemed useful.  As I write this, it occurs to me that I could possibly display the number of retweets *divided by a user's total number of followers* which would probably produce a result that is more comprehensible visually.
+1. To the best of my knowledge, I fulfilled 100% of the application and technical requirements--if I didn't, it's because I misunderstood something.      
+2. The term "audience engagement" is of course open to interpretation. In the end I just decided to include two lines for "number of times favorited" and "number of times retweeted," which seemed a reasonable metric for measuring engagement.
+3. The brief mentioned "number of hashtags," and I included a line for that statistic--even though it's almost always zero. I'm actually wondering if I misunderstood the question.  
+4. The wildly variable popularity of people on Twitter, combined with the dynamic nature of the app, made it *really* hard to scale the graph correctly. I experimented with displaying the data logarithmically, so that Twitterers with followers in the millions could be analyzed visually easy easily as those with followers in the dozens--but it just didn't produce a result that seemed useful.  As I write this, it occurs to me that I could possibly display the number of retweets *divided by a user's total number of followers* which would probably produce a result that is more comprehensible visually.
 
 Development notes:  
 
