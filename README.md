@@ -24,11 +24,11 @@ ACCESS_TOKEN_SECRET=Your Access Token Secret
 npm i    
 (again) to install the npm dependencies *for the React client*.  
 
-5. While still in the rt-client, type  
+5. While still in the rt-client directory, type  
 npm run dev  
 This will run the "dev" script, which launches the server and then the client. Because they are both running from the same command line, when you get done using the app you will need to type CTRL-C *twice* to kill *both* processes.
 
-6. Using the app should be completely intuitive.  You enter a Twitter username and a number of tweets (N) in the input form and click on Submit. The browser should display a line graph of the data for the last N tweets of that user (displayed in reverse chronological order, with the newest ones on the left.) A good username to start with is the MIT Tech Review (techreview) with 20 or 30 tweets...Twitter users with large followings (e.g., katyperry) tend to be favorited and retweeted in HUGE numbers, which makes the "tweet length" line virtually flat.
+6. Using the app should be intuitive.  You enter a Twitter username and a number of tweets (N) in the input form and click on Submit. The browser should display a line graph of the data for the last N tweets of that user (displayed in reverse chronological order, with the newest ones on the left.) A good username to start with is the MIT Tech Review (techreview) with 20 or 30 tweets...Twitter users with large followings (e.g., katyperry) tend to be favorited and retweeted in HUGE numbers, which makes the "tweet length" line virtually flat.
 
 --
 
@@ -36,7 +36,7 @@ Notes to the reviewer:
 1. To the best of my knowledge, I fulfilled 100% of the application and technical requirements--if I didn't, it's because I misunderstood something.      
 2. The term "audience engagement" is of course open to interpretation. In the end I just decided to include two lines for "number of times favorited" and "number of times retweeted," which seemed a reasonable metric for measuring engagement.
 3. The brief mentioned "number of hashtags," and I included a line for that statistic--even though it's almost always zero. I'm actually wondering if I misunderstood the question.  
-4. The wildly variable popularity of people on Twitter, combined with the dynamic nature of the app, made it *really* hard to scale the graph correctly. I experimented with displaying the data logarithmically, so that Twitterers with followers in the millions could be analyzed visually easy easily as those with followers in the dozens--but it just didn't produce a result that seemed useful.  As I write this, it occurs to me that I could possibly display the number of retweets *divided by a user's total number of followers* which would probably produce a result that is more comprehensible visually.
+4. The wildly variable popularity of people on Twitter, combined with the dynamic nature of the app, made it *really* hard to scale the graph correctly. I experimented with displaying the data logarithmically, so that Twitterers with followers in the millions could be analyzed visually easy easily as those with followers in the dozens--but it just didn't produce a result that seemed descriptive.  As I write this, it occurs to me that I could possibly display the number of retweets *divided by a user's total number of followers* which would probably produce a result that is more comprehensible visually.
 
 Development notes:  
 
