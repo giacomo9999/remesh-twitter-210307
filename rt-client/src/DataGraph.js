@@ -18,13 +18,23 @@ export default function DataGraph(props) {
         <YAxis stroke="#2C3A49" />
         <Line
           type="monotone"
-          dataKey="pv"
+          dataKey="tweetLength"
           stroke="#C5D3E2"
           strokeWidth={2}
           activeDot={{ r: 8 }}
         />
-        <Line type="monotone" dataKey="uv" stroke="red" strokeWidth={2} />
-        <Line type="monotone" dataKey="wv" stroke="blue" strokeWidth={2} />
+        <Line
+          type="monotone"
+          dataKey="numOfHash"
+          stroke="red"
+          strokeWidth={2}
+        />
+        <Line
+          type="monotone"
+          dataKey="favoriteCount"
+          stroke="blue"
+          strokeWidth={2}
+        />
       </LineChart>
     </ResponsiveContainer>
   );
