@@ -1,6 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
 import DataGraph from "./DataGraph";
+import InputPanel from "./InputPanel";
 
 function App() {
   const [tweetData, setTweetData] = useState({});
@@ -22,19 +23,16 @@ function App() {
   };
 
   const dataDisplay = dataIn
-    ? tweetData.map((entry, index) =>
-        // <li key={"tweet_" + index}>{entry.full_text.length}</li>
-        {
-          return {
-            name: index,
-            tweetLength: Math.log10(entry.full_text.length),
-            numOfHash: entry.entities.hashtags.length,
-            retweetCount: Math.log10(entry.retweet_count),
-            favoriteCount: Math.log10(entry.favorite_count),
-            userMentions: Math.log10(entry.entities.user_mentions.length),
-          };
-        }
-      )
+    ? tweetData.map((entry, index) => {
+        return {
+          name: index,
+          tweetLength: entry.full_text.length,
+          numOfHash: entry.entities.hashtags.length,
+          retweetCount: entry.retweet_count,
+          favoriteCount: entry.favorite_count,
+          userMentions: entry.entities.user_mentions.length,
+        };
+      })
     : null;
 
   console.log(dataDisplay);
@@ -45,10 +43,10 @@ function App() {
       <div className="graph-container">
         <DataGraph graphData={dataDisplay} />
       </div>
-      <button onClick={() => fetchData("techreview", 20)}>
+      {/* <button onClick={() => fetchData("techreview", 20)}>
         Fetch The Data
-      </button>
-      {/* <ul>{dataDisplay}</ul> */}
+      </button> */}
+      <InputPanel submitData={fetchData} />
     </div>
   );
 }
