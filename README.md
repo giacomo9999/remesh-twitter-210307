@@ -12,7 +12,7 @@ to install the npm dependencies *for the Node Express server*.
 
 3. While still in the remesh-twitter-210307 directory, type  
 touch .env  
-to create a file to hold the environmental variables. If you haven't already, go to the Developer section of Twitter.com, set up an account, and obtain an API Key, an API Secret Key, an Access Token, and an Access Token Secret. The .env file should look like the example below. (PORT is the port number the server will listen for requests on. If you change it for some reason, the variable userUrl in rt-client/src will also need to be changed to match it.)
+to create a file to hold the environmental variables. If you haven't already, go to the Developer section of Twitter.com, set up an account, and obtain an API Key, an API Secret Key, an Access Token, and an Access Token Secret. The .env file should look like the example below. (PORT is the port number the server will listen for requests on. If you change it for some reason, the variable userUrl in rt-client/src/App.js will also need to be changed to match it.)
 
 PORT=8082  
 API_KEY=Your API Key  
