@@ -44,7 +44,9 @@ The business logic of the app was very easy to come up with. Most of the time sp
 1. I actually didn't realize at the start that Twitter's API, for whatever reason, doesn't support CORS--which (as far as I can tell) means it can't be queried directly from the client...it took me longer than I'd care to admit that I'd have to set up a back end to handle the API requests.  
 2. I'd actually never used Recharts before (in fact, I'd never even heard of it), and it took a little time to get used to it.  I have to say it was *really* easy to figure out...quite a pleasant surprise.  
 3. My answer to the question "is there any kind of correlation between tweet length and audience engagement" is "there doesn't seem to be." I spent quite a bit of time poking around in the response JSON trying to find properties that would show anything cool, and I can't say I really found anything.
-4. The InputPanel component is using old-style state rather than the useState hook because it's salvaged from an early personal project. I realize that all the cool kids are using useState these days, but it seemed more important to focus my limited time on numbers 1-3 above.  
+4. The InputPanel component is using old-style state rather than the useState hook because it's salvaged from an early personal project. I realize that all the cool kids are using useState these days, but it seemed more important to focus my limited time on numbers 1-3 above.
+
+Edit: I woke up this morning and realized I didn't handle *any* edge cases or validate *any* inputs (partcularly if a user submits something other than an integer to the "Number of Tweets" input.) Mea culpa. I don't want to risk breaking the app with the 24-hour deadline only a few minutes away--but if it will materially affect my application status, please let me know and I will take the time to fix it.
 
 Thanks so much for giving me the opportunity to do this!  
 
