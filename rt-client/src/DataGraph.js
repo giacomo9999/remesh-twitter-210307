@@ -26,13 +26,19 @@ export default function DataGraph(props) {
         <Line
           type="monotone"
           dataKey="numOfHash"
-          stroke="red"
+          stroke="yellow"
           strokeWidth={2}
         />
         <Line
           type="monotone"
           dataKey="favoriteCount"
           stroke="blue"
+          strokeWidth={2}
+        />
+        <Line
+          type="monotone"
+          dataKey="retweetCount"
+          stroke="green"
           strokeWidth={2}
         />
       </LineChart>
