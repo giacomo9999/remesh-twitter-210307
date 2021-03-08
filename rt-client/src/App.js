@@ -9,11 +9,11 @@ function App() {
 
   const fetchData = (user, numOfTweets) => {
     let userUrl = "http://localhost:8082/" + user + "/" + numOfTweets;
-    console.log(userUrl);
+    // console.log(userUrl);
     axios
       .get(userUrl)
       .then((res) => {
-        console.log(res.data);
+        // console.log(res.data);
         setTweetData(res.data);
         setDataIn(true);
       })
@@ -34,8 +34,6 @@ function App() {
         };
       })
     : null;
-
-  console.log(dataDisplay);
 
   return (
     <div className="container-outer">
