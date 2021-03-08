@@ -28,7 +28,7 @@ Cool Grey 11: #C5D3E2
 body {
   /* background color 0 */
   margin: 0;
-  background-color: #3C4A59;
+  background-color: #3c4a59;
   font-family: "Oswald", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -76,56 +76,15 @@ p {
   width: 25%;
   margin: 10px auto 5px;
   /* background color 2 */
-  background-color: #3c4a59;
-  padding: 10px;
+  background-color: black;
+  /* padding: 10px; */
   border-radius: 5px;
 }
 
-/* Lists: */
 
-ul {
-  width: 25%;
-  border-radius: 5px;
-  /* background color 11 */
-  background-color: #c5d3e2;
-  padding: 10px;
-  margin: 10px auto;
-  list-style: none;
-}
 
-li {
-  font-size: 1.2em;
-  font-weight: 600;
-  text-align: center;
-  margin: 5px;
-  /* color 0 */
-  color: #1c2a39;
-}
 
-/* Tables: */
 
-table {
-  table-layout: fixed;
-  width: 75%;
-  background-color: white;
-  padding: 10px;
-  margin: 10px auto 20px;
-}
-
-tr {
-  text-align: center;
-  font-weight: 400;
-  color: black;
-}
-
-th {
-  font-weight: 500;
-  text-align: left;
-}
-
-td {
-  text-align: left;
-}
 
 /* Button (General Use) */
 
@@ -137,7 +96,8 @@ button {
   text-decoration: none;
   display: inline-block;
   font-family: "Oswald", sans-serif;
-  font-size: 0.9em;
+  font-size: 1.5rem;
+  border: none;
   border-radius: 5px;
 }
 
@@ -147,9 +107,10 @@ button {
   width: 100%;
   margin: 25px auto;
   /* border color 9 */
-  border: 1px solid #acbac9;
-  padding: 15px;
+  /* padding: 15px; */
+  background-color: #5c6a79;
   box-sizing: border-box;
+  border-radius: 10px;
 }
 
 .h-form .h-label {
@@ -157,7 +118,7 @@ button {
   padding: 7px;
   box-sizing: border-box;
   /* background color 8 */
-  background-color: #9caab9;
+  background-color: transparent;
 }
 
 .h-form .h-input {
@@ -167,6 +128,8 @@ button {
   height: 30px;
   padding: 15px;
   font-size: 14px;
+  border: none;
+  border-radius: 5px;
 }
 
 .h-form .h-btn {
@@ -192,31 +155,3 @@ button {
   background-color: #5c6a79;
 }
 
-/* Navbar (Top)*/
-
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  text-align: center;
-}
-
-nav li {
-  display: inline-block;
-  margin: 20px;
-}
-
-nav a {
-  text-decoration: none;
-  color: black;
-}
-
-nav a:hover,
-nav a:active {
-  color: orange;
-}
-
-nav .selectedLink {
-  color: yellowgreen;
-}

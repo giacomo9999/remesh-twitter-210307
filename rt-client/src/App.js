@@ -43,9 +43,6 @@ function App() {
       <div className="graph-container">
         <DataGraph graphData={dataDisplay} />
       </div>
-      {/* <button onClick={() => fetchData("techreview", 20)}>
-        Fetch The Data
-      </button> */}
       <InputPanel submitData={fetchData} />
     </div>
   );
