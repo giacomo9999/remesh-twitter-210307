@@ -44,7 +44,7 @@ function App() {
       <h4>white: length of tweet in characters</h4>
       <h4 style={{ color: "blue" }}>blue: number of times favorited</h4>
       <h4 style={{ color: "green" }}>green: number of times retweeted</h4>
-      <h4 style={{ color: "yellow" }}>red: number of hashtags in tweet</h4>
+      <h4 style={{ color: "yellow" }}>yellow: number of hashtags in tweet</h4>
       <InputPanel submitData={fetchData} />
     </div>
   );
